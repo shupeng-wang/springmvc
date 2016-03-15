@@ -1,0 +1,44 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'jetty'
+apply plugin: 'eclipse'
+
+respositories {
+	mavenCentral()
+}
+
+dependencies {
+	providedCompile 'javax.servlet:servlet:servlet-api:2.5',
+			'javax.servlet.jsp:jsp-api:2.1'
+			'javax.servlet:jstl:1.2'
+			// Display Tag
+			'displaytag:displaytag:1.2'
+			// Standard taglibs
+			'taglibs:standard:1.1.2'
+			
+			// Spring Framework
+			'org.springframework:spring-context:4.0.0.RELEASE'
+			'org.springframework:spring-webmvc:4.0.0.RELEASE'
+			'org.springframework:spring-orm:4.0.0.RELEASE'
+			'org.springframework:spring-tx:4.0.0.RELEASE'
+			
+			// Spring Framework Data
+			'org.springframework.data:spring-data-jpa:1.4.3.RELEASE'
+			
+			// Spring Framework Security
+			'org.springframework.security:spring-security-web:3.2.0.RELEASE'
+			'org.springframework.security:spring-security-config:3.2.0.RELEASE'
+			'org.springframework.security:spring-security-taglibs:3.2.0.RELEASE'
+			
+			// Spring Framework Testing 
+			'org.springframework:spring-test:3.2.4.RELEASE'
+			
+			// Apache 
+			
+			// MySQL
+			
+			// Hibernate
+			
+	runtime 'javax.servlet:jstl:1.1.2',
+			'taglibs:standard:1.1.2'
+}
